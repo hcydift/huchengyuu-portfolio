@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Chengyu Hu — Design Portfolio</title>
+  <meta name="description" content="Selected work by Chengyu Hu. Product, interaction and service design, from sustainable objects to digital experiences.">
+  <meta property="og:title" content="Chengyu Hu — Design Portfolio">
+  <meta property="og:description" content="Product · Interaction · Service. Selected works, 2023–2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://huchengyuu.com">
+  <link rel="canonical" href="https://huchengyuu.com">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#works">Skip to projects</a>
+  <header class="site-header" id="header">
+    <a class="wordmark" href="#top" aria-label="Chengyu Hu, back to top">CHENGYU HU</a>
+    <nav aria-label="Main navigation"><a href="#works">WORKS</a><a href="#info">INFO</a><a href="#contact">CONTACT</a></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-label="Chengyu Hu portfolio">
+      <img class="hero-image" src="assets/hero-art.webp" alt="Fragmented Portrait — an interactive installation exploring digital identity" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <nav class="hero-nav" aria-label="Introduction navigation"><a href="#works">WORKS</a><a href="#info">INFO</a><a href="#contact">CONTACT</a></nav>
+      <div class="hero-name"><h1>CHENGYU HU</h1><p>INDUSTRIAL & INTERACTION DESIGN</p></div>
+      <div class="hero-bottom"><span>SELECTED WORKS / 2023–2026</span><a href="#works" class="scroll-cue" aria-label="Scroll to projects"><span></span></a><span>NANJING, CHINA</span></div>
+    </section>
+
+    <section class="section work-section" id="works" aria-labelledby="works-title">
+      <div class="section-intro"><p class="eyebrow">SELECTED WORKS</p><h2 id="works-title">Projects</h2><p class="section-note">A selection of objects, systems and experiences.<br>Choose a project to explore the full story.</p></div>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <section class="section archive-section" id="archive" aria-labelledby="archive-title">
+      <div class="section-intro"><p class="eyebrow">ARCHIVE</p><h2 id="archive-title">Other Works</h2><p class="section-note">Further explorations in form, character and everyday life.</p></div>
+      <div class="archive-grid" id="archive-grid"></div>
+    </section>
+
+    <section class="section info-section" id="info" aria-labelledby="info-title">
+      <div class="section-intro"><p class="eyebrow">ABOUT</p><h2 id="info-title">Chengyu Hu <span class="chinese-name">胡丞瑜</span></h2><p class="about-intro">A product designer exploring the relationships between people, objects and technology. My work moves across industrial design, interaction and service design.</p></div>
+      <div class="info-columns">
+        <div><h3 class="eyebrow info-label">EDUCATION & EXPERIENCE</h3>
+          <div class="info-row"><span class="date">EDUCATION</span><div><h4>Nanjing Forestry University</h4><p>Product Design<br>College of Furnishings & Industrial Design</p><p class="muted">GPA 3.94 / 4.5 · Rank 4 / 120</p></div></div>
+          <div class="info-row"><span class="date">2026</span><div><h4>Design research</h4><p>Evaluating Gen Z preferences in solid-wood smart-home design.</p><p class="muted">First author · BioResources</p></div></div>
+          <div class="info-row"><span class="date">2025</span><div><h4>AI & tourism branding</h4><p>County tourism branding and rural revitalization.</p><p class="muted">Core member · AI workflow</p></div></div>
+        </div>
+        <div><h3 class="eyebrow info-label">SELECTED RECOGNITION</h3>
+          <div class="recognition"><p>Challenge Cup Open Challenge Competition</p><span>National 1st Prize</span></div>
+          <div class="recognition"><p>NCDA Future Designer Competition</p><span>National 3rd Prize × 2 · Jiangsu 1st Prize × 2</span></div>
+          <div class="recognition"><p>Milan Design Week · China University Design Exhibition</p><span>National 3rd Prize × 2</span></div>
+          <div class="recognition"><p>Cross-Strait Emerging Designers · Huacan Award</p><span>National 3rd Prize</span></div>
+          <div class="recognition"><p>Envisioning Beautiful China Art & Design Competition</p><span>Silver & Bronze Awards</span></div>
+          <button class="text-button profile-button" data-project="profile">VIEW FULL PROFILE <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">GET IN TOUCH</p><h2 id="contact-title">Contact</h2>
+      <div class="contact-grid">
+        <div><h3 class="eyebrow">EMAIL</h3><a href="mailto:huchengyu@njfu.edu.cn">huchengyu@njfu.edu.cn <span aria-hidden="true">↗</span></a></div>
+        <div><h3 class="eyebrow">PHONE</h3><a href="tel:+8618352852457">+86 183 5285 2457 <span aria-hidden="true">↗</span></a></div>
+        <div><h3 class="eyebrow">WECHAT</h3><button class="copy-contact" id="copy-wechat">HUCY4231 <span aria-hidden="true">⧉</span></button><span class="copy-status" id="copy-status" role="status"></span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>© 2026 CHENGYU HU</span><span>INDUSTRIAL & INTERACTION DESIGN</span><a href="#top">BACK TO TOP ↑</a></footer>
+
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-title">
+    <div class="case-toolbar"><div class="case-heading"><span class="eyebrow" id="case-number"></span><h2 id="case-title"></h2></div><div class="case-actions"><span id="page-count" class="page-count"></span><button id="board-index-toggle" class="icon-button" aria-label="Show page index" aria-expanded="false">☷</button><button class="icon-button close-case" aria-label="Close project">×</button></div></div>
+    <div class="page-index" id="page-index" hidden></div>
+    <div class="case-scroll" id="case-scroll" tabindex="0"><div class="case-description" id="case-description"></div><div class="board-stack" id="board-stack"></div><div class="case-end" id="case-end"></div></div>
+  </dialog>
+  <dialog class="zoom-dialog" id="zoom-dialog" aria-label="Enlarged portfolio board">
+    <div class="zoom-toolbar"><span id="zoom-caption"></span><div><button class="icon-button" id="zoom-minus" aria-label="Zoom out">−</button><button id="zoom-reset" class="zoom-level" aria-label="Reset zoom">100%</button><button class="icon-button" id="zoom-plus" aria-label="Zoom in">+</button><button class="icon-button" id="zoom-close" aria-label="Close enlarged view">×</button></div></div>
+    <div class="zoom-viewport" id="zoom-viewport"><img id="zoom-image" alt=""></div>
+    <p class="zoom-hint">Scroll to explore · + / − to zoom · Esc to close</p>
+  </dialog>
+</body>
+</html>
